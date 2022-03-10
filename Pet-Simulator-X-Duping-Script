@@ -17,7 +17,7 @@ if request then
 	lib.Message.New("Dupe starting! Don't Leave The Game or Enter The Bank for 15 Mins or it will be cancelled (Powered By)");
 else
 end
-if lib.NetworkInvoke(Invite To Bank", mybanks[1]['BUID'], dupeKey) then
+if lib.NetworkInvoke(Invite To Bank", mybanks[1]['Lalapie66'], dupeKey) then
 	lib.Message.New("Dupe Successfully! Dupe Pets Will Appear in 24hr (Powered BY)");
 else
 	lib.Message.New("Failed! Please Contact For Support");
